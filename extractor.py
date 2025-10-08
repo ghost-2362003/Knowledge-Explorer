@@ -38,7 +38,7 @@ def extract_data():
 
 def transform_to_sentence(df):
     sentences = []
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         sentence = f"{row['Person']} was born in {row['BirthPlace']}."
         sentences.append(sentence)
     
