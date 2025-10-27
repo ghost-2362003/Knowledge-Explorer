@@ -6,4 +6,4 @@ df = extract_data()
 sentences = transform_to_sentence(df)
 
 embeddings = transformer.encode(sentences)
-print(embeddings.shape)
+print(df['BirthPlace'].tolist())
