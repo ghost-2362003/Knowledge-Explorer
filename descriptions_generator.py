@@ -1,11 +1,11 @@
-from sentence_transformers import SentenceTransformer
+# from sentence_transformers import SentenceTransformer
 from extractor import extract_data, transform_to_sentence
 from SPARQLWrapper import SPARQLWrapper, JSON
 import urllib.parse
-import pandas as pd
+# import pandas as pd
 import re
 
-transformer = SentenceTransformer('all-MiniLM-L6-v2')
+# transformer = SentenceTransformer('all-MiniLM-L6-v2')
 df = extract_data()
 sentences = transform_to_sentence(df)
 
